@@ -12,10 +12,13 @@ public class RepisaTrianngular {
 
 //operaciones
         OperacionMetodos realizarOperaciones = new OperacionMetodos();
-        float resultadArea = realizarOperaciones.p(caputaDatos.getA(), caputaDatos.getB(), caputaDatos.getC());
+        float resutadoP = realizarOperaciones.p(caputaDatos.getA(), caputaDatos.getB(), caputaDatos.getC());
+        float resultadoArea = realizarOperaciones.area(caputaDatos.getA(), caputaDatos.getB(), caputaDatos.getC(), resutadoP);
 
         //resultado
         Impresion imprimir = new Impresion();
-        float impresion = imprimir.imprimirArea(resultadArea);
+        float impresion2 = imprimir.imprimirPerimetro(resutadoP);
+        float impresion = imprimir.imprimirArea(resultadoArea);
+
     }
 }
